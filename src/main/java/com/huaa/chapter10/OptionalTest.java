@@ -1,5 +1,7 @@
 package com.huaa.chapter10;
 
+import java.util.Optional;
+
 /**
  * Desc:
  *
@@ -8,4 +10,8 @@ package com.huaa.chapter10;
  */
 
 public class OptionalTest {
+    public static void main(String[] args) {
+        Optional<String> name = Optional.empty();
+        name.ifPresent(System.out::println);
+    }
 }
